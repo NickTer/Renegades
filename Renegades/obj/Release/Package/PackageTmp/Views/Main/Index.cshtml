@@ -1,0 +1,69 @@
+﻿@using System.Web.Mvc.Html
+@using System.Web.UI.WebControls
+@using Renegades.Helpers
+@model IEnumerable<Renegades.Models.News>
+@{
+    ViewBag.Title = "Index";
+}
+<div id="content_block"> 
+<div class="pict_slide">
+    <div class="slider-wrapper theme-default">
+        <div id="slider" class="nivoSlider">
+            <img src="~/Content/Images/1.png"/>
+            <img src="~/Content/images/2.png"/>
+               
+        </div>
+    </div>
+</div>
+    <div class="text_block about">
+        <h1>About Kansas RENEGADES</h1>
+        
+        <p>
+            The nationally ranked Kansas Renegades are a girls fastpitch organization based out of Wichita Kansas which annually fields 10 - 20 teams ranging from ages 5 - 18 and who compete on a local and national level. In 2014 the Renegades will field 17 teams.
+        </p>
+        <p>
+            Founded and managed by Chuck Schrader, the Renegades have continued to grow beyond what could have ever been imagined. Assisted by numerous volunteers over its 12 year history, the Renegades have achieved many successes both on and off the field. Although regularly measuring success by the number of wins each year, over time the only valuable measure of success comes from the number of girls who have reached their goal of becoming a college softball player. To date that number exceeds 130. Ultimately however and with our Mission in mind, the truly rewarding satisfaction comes from seeing them graduate and go on to lead self-reliant productive lives.
+        </p>
+        <p>
+            The Renegades’ coaches and volunteers work year around in an effort to achieve the Mission. We are committed to long-term success and strive to build a self-sustaining organization. One that remains continuously focused on providing a place for those who are committed to the Vision, to simply play softball.
+        </p>
+        <p>
+            Chuck would like to give special thanks not only to those original players and coaches who helped get this thing started, but also to every single player and coach who has contributed to the continued growth of the organization. Confident that there are many more stories to write in the future, the Renegades ask for your continued support in our quest to provide a place where young ladies can build their competitive character and with a little luck, the opportunity to earn the education they need to sustain a self-dependent future.
+        </p>
+        <h3>Mission Statement</h3>
+        <p>The Mission of the Kansas Renegades Fast pitch Softball Club is to develop well-balanced, self-confident, young women who recognize the value of commitment and are capable and willing to make a real contribution in a team environment. It is our hope that a large proportion of these young women will pursue college softball as an avenue to continue building their competitive character while preparing them with the education they need to sustain a self- reliant future. </p>
+    </div>
+    
+<div class="text_block news">
+     <h1>Renegades News</h1>
+    <ul id="info_news_list">
+        @foreach (var n in @Model)
+        {
+             <li>
+            <img src="~/Uploads/News/@n.Photo" class="main_pict"/><h3>@Html.ActionLink(n.Headder,"NDeteils","News",new {newsId=n.NewsId},null)</h3>
+            <div class="info_news_desc">Published: <span>@n.PublishDate.ToString("dd-MM-yyyy")</span> </div>
+            <p class="text_container">@Html.Truncate(n.Text,300)</p>
+            <div class="clearfix"></div>
+        </li>
+        }
+      
+    </ul>
+</div>
+<div class="clearfix"></div>
+    </div>
+<script type="text/javascript">
+    
+    $(window).load(function() {
+
+        $('#slider').nivoSlider(
+                {
+                    effect:'boxRandom',
+                    animSpeed:2000,
+                    pauseTime:4000,
+                    directionNav: false, // Next & Prev navigation
+                    directionNavHide: false, // Only show on hover
+                    controlNav: false
+                });
+    });
+    
+</script>

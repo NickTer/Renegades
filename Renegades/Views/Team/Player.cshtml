@@ -1,0 +1,59 @@
+﻿@model Renegades.ViewModel.TeamDataVM
+
+@{
+    ViewBag.Title = "Player Info - "+ViewBag.Player.Fname+" "+ViewBag.Player.LName+"";
+}
+<div id="content_block">
+    <div class="text_block">
+        <h1>@ViewBag.Player.Fname @ViewBag.Player.LName</h1>    
+    <br/>
+        <table  width="100%">
+            <tr><td rowspan="2" width="200" valign="top"><img src="~/Content/Images/def_player_img.png" height="285"/><div class="btn_cover">@Html.ActionLink("Back to Team Info","ShTeam","Team",new{teamid=@ViewBag.TeamId},new {@class="back_btn"})</div></td>
+                <td>
+                    <table class="profile_list">
+                        <caption>Profile Info</caption>
+                                                                        
+                        <tr><td class="label_row label_size">Date of Birth:</td><td class="info_row"></td></tr>                                                                             <tr><td class="label_row">School:</td><td class="info_row"></td></tr>                                                         
+                        <tr><td class="label_row label_size">Graduation Year:</td><td class="info_row"></td></tr>                                                         
+                    </table>
+                </td></tr>
+            <tr><td colspan="2">
+                    <table class="profile_list">
+                        <caption>Stats</caption>
+                        <tr>
+                            <td class="label_row label_size">Position</td>
+                            <td class="info_row info_size"></td>
+                            <td class="label_row label_size">Jersey Number</td>
+                            <td class="info_row">@ViewBag.Player.TeamNumber</td>
+                        </tr>
+                        <tr>
+                            <td class="label_row label_size">Bittin Average</td>
+                            <td class="info_row info_size"></td>
+                            <td class="label_row label_size">Throwing</td>
+                            <td class="info_row"></td>
+                        </tr>
+                        <tr>
+                            <td class="label_row label_size">hm-1st</td>
+                            <td class="info_row info_size"></td>
+                            <td class="label_row label_size">Overhand Speed</td>
+                            <td class="info_row"></td>
+                        </tr>
+                        <tr>
+                            <td class="label_row label_size">hm-hm</td>
+                            <td class="info_row info_size"></td>
+                            <td class="label_row">Pitch Speed</td>
+                            <td class="info_row"></td>
+                        </tr>
+                        <tr>
+                            <td class="label_row label_size">ERA</td>
+                            <td class="info_row info_size"></td>
+                            <td class="label_row label_size">Bats</td>
+                            <td class="info_row"></td>
+                        </tr>  
+                    </table>
+                </td></tr>
+        </table>
+       
+    </div>
+   
+</div>

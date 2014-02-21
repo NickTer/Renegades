@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Renegades.Models.TeamType>
+@{
+    ViewBag.Title = "Index";
+    
+}
+
+<div id="content_block">
+    <div class="text_block">
+        <h1>Our Teams</h1>
+        <table class="team_lists">
+    @foreach (var tt in @Model)
+    {
+        <tr><th class="team_name" colspan="4">@Html.DisplayFor(modelItem => tt.TypeName)</th></tr>
+         <tr><th class="team_first">Team</th><th class="team_middle">Coatches</th><th class="team_middle">Players</th><th class="team_last">Wins</th></tr>
+        foreach (var t in tt.Teams)
+        {
+            
+             <tr><td class="team_td_first">@Html.DisplayFor(modelItem => t.TeamName)</td><td class="team_td_middle">@Html.DisplayFor(modelItem=>t.Coaches.Count)</td><td class="team_td_middle"> @Html.DisplayFor(modelItem=>t.Players.Count) </td><td class="team_td_last">N/A</td></tr>
+       
+       
+
+        }
+    }
+        </table>
+    </div> 
+  
+</div>

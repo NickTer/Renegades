@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Этот файл используется в процессе публикации или упаковки вашего веб-проекта. Вы можете настроить поведение процесса,
+изменив этот файл MSBuild. Дополнительные сведения см. по адресу http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_Data/Renegades.mdf">
+      <publishTime>02/21/2014 16:29:18</publishTime>
+    </File>
+    <File Include="App_Data/Renegades.Models.RenegadeEntities.mdf">
+      <publishTime>02/20/2014 15:15:39</publishTime>
+    </File>
+    <File Include="App_Data/Renegades.Models.RenegadeEntities_log.ldf">
+      <publishTime>02/20/2014 15:15:39</publishTime>
+    </File>
+    <File Include="App_Data/Renegades_log.ldf">
+      <publishTime>02/21/2014 16:29:18</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>02/18/2014 00:40:42</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>02/18/2014 00:40:43</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>02/13/2014 11:26:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Mvc.FixedDisplayModes.dll">
+      <publishTime>02/13/2014 11:26:35</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>02/13/2014 11:26:30</publishTime>
+    </File>
+    <File Include="bin/Renegades.dll">
+      <publishTime>02/21/2014 17:21:48</publishTime>
+    </File>
+    <File Include="bin/Renegades.pdb">
+      <publishTime>02/21/2014 17:10:56</publishTime>
+    </File>
+    <File Include="bin/ru/System.Net.Http.Formatting.resources.dll">
+      <publishTime>02/13/2014 11:26:39</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.Helpers.resources.dll">
+      <publishTime>02/13/2014 11:26:38</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.Http.resources.dll">
+      <publishTime>02/13/2014 11:26:38</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.Http.WebHost.resources.dll">
+      <publishTime>02/13/2014 11:26:39</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.Mvc.resources.dll">
+      <publishTime>02/13/2014 11:26:38</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.Razor.resources.dll">
+      <publishTime>02/13/2014 11:26:37</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.WebPages.Deployment.resources.dll">
+      <publishTime>02/13/2014 11:26:38</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.WebPages.Razor.resources.dll">
+      <publishTime>02/13/2014 11:26:38</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.WebPages.resources.dll">
+      <publishTime>02/13/2014 11:26:38</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>02/13/2014 11:26:35</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>02/13/2014 11:26:33</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>02/13/2014 11:26:36</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>02/13/2014 11:26:36</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>02/13/2014 11:26:34</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>02/13/2014 11:26:33</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>02/13/2014 11:26:33</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>02/13/2014 11:26:33</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>02/13/2014 11:26:34</publishTime>
+    </File>
+    <File Include="Content/Images/1.png">
+      <publishTime>02/17/2014 13:39:12</publishTime>
+    </File>
+    <File Include="Content/Images/16.jpg">
+      <publishTime>02/17/2014 17:35:49</publishTime>
+    </File>
+    <File Include="Content/Images/17.jpg">
+      <publishTime>02/17/2014 17:37:12</publishTime>
+    </File>
+    <File Include="Content/Images/17.png">
+      <publishTime>02/17/2014 17:44:00</publishTime>
+    </File>
+    <File Include="Content/Images/2.png">
+      <publishTime>02/17/2014 13:37:40</publishTime>
+    </File>
+    <File Include="Content/Images/300x100.jpg">
+      <publishTime>02/17/2014 14:18:00</publishTime>
+    </File>
+    <File Include="Content/Images/32.jpg">
+      <publishTime>02/17/2014 15:10:39</publishTime>
+    </File>
+    <File Include="Content/Images/33.jpg">
+      <publishTime>02/17/2014 15:04:22</publishTime>
+    </File>
+    <File Include="Content/Images/8.png">
+      <publishTime>02/17/2014 17:35:42</publishTime>
+    </File>
+    <File Include="Content/Images/animated-overlay.gif">
+      <publishTime>02/17/2014 05:46:40</publishTime>
+    </File>
+    <File Include="Content/Images/arrow.png">
+      <publishTime>02/17/2014 16:34:08</publishTime>
+    </File>
+    <File Include="Content/Images/arrow_turn_right.png">
+      <publishTime>04/08/2009 19:48:58</publishTime>
+    </File>
+    <File Include="Content/Images/arrow_yel.jpg">
+      <publishTime>02/17/2014 16:30:07</publishTime>
+    </File>
+    <File Include="Content/Images/def_player_img.png">
+      <publishTime>02/21/2014 01:47:38</publishTime>
+    </File>
+    <File Include="Content/Images/hdr.png">
+      <publishTime>02/17/2014 11:12:06</publishTime>
+    </File>
+    <File Include="Content/Images/logo.png">
+      <publishTime>02/17/2014 10:50:32</publishTime>
+    </File>
+    <File Include="Content/Images/logo1.png">
+      <publishTime>02/17/2014 11:15:06</publishTime>
+    </File>
+    <File Include="Content/Images/small_news.jpg">
+      <publishTime>02/17/2014 14:18:38</publishTime>
+    </File>
+    <File Include="Content/Images/softball_field.jpg">
+      <publishTime>02/13/2014 12:26:14</publishTime>
+    </File>
+    <File Include="Content/Images/softball_fieldg.jpg">
+      <publishTime>02/16/2014 14:41:37</publishTime>
+    </File>
+    <File Include="Content/Images/softball_fieldg.png">
+      <publishTime>02/16/2014 14:40:55</publishTime>
+    </File>
+    <File Include="Content/Images/ui-bg_flat_30_cccccc_40x100.png">
+      <publishTime>02/17/2014 05:46:40</publishTime>
+    </File>
+    <File Include="Content/Images/ui-bg_flat_50_5c5c5c_40x100.png">
+      <publishTime>02/17/2014 05:46:40</publishTime>
+    </File>
+    <File Include="Content/Images/ui-bg_glass_20_555555_1x400.png">
+      <publishTime>02/17/2014 05:46:40</publishTime>
+    </File>
+    <File Include="Content/Images/ui-bg_glass_40_0078a3_1x400.png">
+      <publishTime>02/17/2014 05:46:40</publishTime>
+    </File>
+    <File Include="Content/Images/ui-bg_glass_40_ffc73d_1x400.png">
+      <publishTime>02/17/2014 05:46:40</publishTime>
+    </File>
+    <File Include="Content/Images/ui-bg_gloss-wave_25_333333_500x100.png">
+      <publishTime>02/17/2014 05:46:40</publishTime>
+    </File>
+    <File Include="Content/Images/ui-bg_highlight-soft_80_eeeeee_1x100.png">
+      <publishTime>02/17/2014 05:46:40</publishTime>
+    </File>
+    <File Include="Content/Images/ui-bg_inset-soft_25_000000_1x100.png">
+      <publishTime>02/17/2014 05:46:40</publishTime>
+    </File>
+    <File Include="Content/Images/ui-bg_inset-soft_30_f58400_1x100.png">
+      <publishTime>02/17/2014 05:46:40</publishTime>
+    </File>
+    <File Include="Content/Images/ui-icons_222222_256x240.png">
+      <publishTime>02/17/2014 05:46:40</publishTime>
+    </File>
+    <File Include="Content/Images/ui-icons_4b8e0b_256x240.png">
+      <publishTime>02/17/2014 05:46:40</publishTime>
+    </File>
+    <File Include="Content/Images/ui-icons_a83300_256x240.png">
+      <publishTime>02/17/2014 05:46:40</publishTime>
+    </File>
+    <File Include="Content/Images/ui-icons_cccccc_256x240.png">
+      <publishTime>02/17/2014 05:46:40</publishTime>
+    </File>
+    <File Include="Content/Images/ui-icons_ffffff_256x240.png">
+      <publishTime>02/17/2014 05:46:40</publishTime>
+    </File>
+    <File Include="Content/jquery-ui-1.10.4.custom.css">
+      <publishTime>02/17/2014 05:46:40</publishTime>
+    </File>
+    <File Include="Content/nivo-slider.css">
+      <publishTime>01/24/2014 18:06:35</publishTime>
+    </File>
+    <File Include="Content/Style.css">
+      <publishTime>02/21/2014 16:14:21</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>02/13/2014 11:26:25</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>02/18/2014 00:40:45</publishTime>
+    </File>
+    <File Include="Renegades.csproj.DotSettings.user">
+      <publishTime>02/19/2014 13:58:11</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>02/17/2014 05:46:40</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>02/12/2014 18:05:59</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>02/12/2014 18:05:40</publishTime>
+    </File>
+    <File Include="Uploads/News/1.jpg">
+      <publishTime>02/17/2014 14:17:26</publishTime>
+    </File>
+    <File Include="Uploads/News/2.jpg">
+      <publishTime>02/17/2014 15:10:11</publishTime>
+    </File>
+    <File Include="Uploads/News/3.jpg">
+      <publishTime>02/17/2014 15:02:47</publishTime>
+    </File>
+    <File Include="Uploads/News/4.jpg">
+      <publishTime>02/17/2014 13:12:36</publishTime>
+    </File>
+    <File Include="Uploads/News/5.jpg">
+      <publishTime>02/17/2014 13:12:15</publishTime>
+    </File>
+    <File Include="Uploads/News/6.jpg">
+      <publishTime>02/21/2014 12:06:00</publishTime>
+    </File>
+    <File Include="Views/Main/ContactUs.cshtml">
+      <publishTime>02/21/2014 16:08:57</publishTime>
+    </File>
+    <File Include="Views/Main/Index.cshtml">
+      <publishTime>02/21/2014 16:24:30</publishTime>
+    </File>
+    <File Include="Views/News/Index.cshtml">
+      <publishTime>02/21/2014 16:18:21</publishTime>
+    </File>
+    <File Include="Views/News/NDeteils.cshtml">
+      <publishTime>02/21/2014 16:22:43</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>02/21/2014 11:03:00</publishTime>
+    </File>
+    <File Include="Views/Team/Index.cshtml">
+      <publishTime>02/21/2014 01:10:26</publishTime>
+    </File>
+    <File Include="Views/Team/Player.cshtml">
+      <publishTime>02/21/2014 01:49:49</publishTime>
+    </File>
+    <File Include="Views/Team/ShTeam.cshtml">
+      <publishTime>02/21/2014 15:32:28</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>02/13/2014 11:26:25</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>02/16/2014 13:43:31</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>02/21/2014 17:22:04</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

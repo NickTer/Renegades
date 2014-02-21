@@ -1,0 +1,102 @@
+﻿@model Renegades.Models.ContactMessage
+
+@{
+    ViewBag.Title = "ContactUs";
+}
+<div id="content_block">
+    <h1>Contact Us</h1>
+   
+    <div class="text_block left_sidec">
+        
+        @if (@Model.Name!=null)
+        {
+            <div style="background-color: #121212;padding: 5px;margin-top:10px;margin-right:15px;margin-left: 10px;">
+                <h3>Thank You</h3>
+                <p>Thank you, @Model.LastName @Model.Name, for sending your message! </p>
+                <p>@Html.ActionLink("Go to contact form","ContactUs")</p>
+            </div>
+        }
+        else
+        {
+            using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true)
+
+                <ul id="form_items">
+                    <li class="editor-label">
+                        @Html.LabelFor(model => model.Name)
+                    </li>
+                    <li class="editor-field">
+                        @Html.TextBoxFor(model => model.Name, new {@class = "inp large_inp"})
+                        @Html.ValidationMessageFor(model => model.Name)
+                    </li>
+
+                    <li class="editor-label">
+                        @Html.LabelFor(model => model.LastName)
+                    </li>
+                    <li class="editor-field">
+                        @Html.TextBoxFor(model => model.LastName, new {@class = "inp large_inp"})
+                        @Html.ValidationMessageFor(model => model.LastName)
+                    </li>
+
+                    <li class="editor-label">
+                        @Html.LabelFor(model => model.Email)
+                    </li>
+                    <li class="editor-field">
+                        @Html.TextBoxFor(model => model.Email, new {@class = "inp large_inp"})
+                        @Html.ValidationMessageFor(model => model.Email)
+                    </li>
+
+                    <li class="editor-label">
+                        @Html.LabelFor(model => model.Phone)
+                    </li>
+                    <li class="editor-field">
+                        @Html.TextBoxFor(model => model.Phone, new {@class = "inp large_inp"})
+                        @Html.ValidationMessageFor(model => model.Phone)
+                    </li>
+
+                    <li class="editor-label">
+                        @Html.LabelFor(model => model.Subject)
+                    </li>
+                    <li class="editor-field">
+                        @Html.TextBoxFor(model => model.Subject, new {@class = "inp large_inp"})
+                        @Html.ValidationMessageFor(model => model.Subject)
+                    </li>
+
+                    <li class="editor-label">
+                        @Html.LabelFor(model => model.Message)
+                    </li>
+                    <li class="editor-field">
+                        @Html.TextAreaFor(model => model.Message, new {@class = "inp_arrea"})
+                        @Html.ValidationMessageFor(model => model.Message)
+                    </li>
+
+                    <li>
+                        <input type="submit" value="Send Message" class="submit_btn"/>
+                    </li>
+                </ul>
+            }
+        }
+    </div>
+     <div class="text_block right_sidec">
+        
+            
+            
+         <p> 
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
+         </p>
+            
+                    <ul id="contact_info">
+                        <li>hello@renegades.com</li>
+                        <li>+47288399485</li>
+                        <li>www.example.com</li>
+                    </ul>
+             
+        
+        <div class="map_container">
+            <iframe width="550" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.ua/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Kansas+City,+MO,+United+States&amp;aq=0&amp;oq=Kansas&amp;sll=47.122595,37.581962&amp;sspn=0.401337,1.056747&amp;ie=UTF8&amp;hq=&amp;hnear=%D0%9A%D0%B0%D0%BD%D0%B7%D0%B0%D1%81-%D0%A1%D0%B8%D1%82%D0%B8,+%D0%94%D0%B6%D0%B5%D0%BA%D1%81%D0%BE%D0%BD,+%D0%9C%D0%B8%D1%81%D1%81%D1%83%D1%80%D0%B8,+%D0%A1%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5+%D0%A8%D1%82%D0%B0%D1%82%D1%8B+%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8&amp;t=m&amp;z=10&amp;ll=39.099726,-94.578567&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com.ua/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Kansas+City,+MO,+United+States&amp;aq=0&amp;oq=Kansas&amp;sll=47.122595,37.581962&amp;sspn=0.401337,1.056747&amp;ie=UTF8&amp;hq=&amp;hnear=%D0%9A%D0%B0%D0%BD%D0%B7%D0%B0%D1%81-%D0%A1%D0%B8%D1%82%D0%B8,+%D0%94%D0%B6%D0%B5%D0%BA%D1%81%D0%BE%D0%BD,+%D0%9C%D0%B8%D1%81%D1%81%D1%83%D1%80%D0%B8,+%D0%A1%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5+%D0%A8%D1%82%D0%B0%D1%82%D1%8B+%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8&amp;t=m&amp;z=10&amp;ll=39.099726,-94.578567" style="color:#0000FF;text-align:left">Просмотреть увеличенную карту</a></small>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>

@@ -1,0 +1,46 @@
+﻿@using Renegades.Helpers
+@model IEnumerable<Renegades.Models.News>
+
+@{
+    ViewBag.Title = ViewBag.NewsDetail.Headder;
+}
+<div id="content_block">
+<div class="text_block right_side">
+    <ul id="full_news_list">
+        <li><h1>@ViewBag.NewsDetail.Headder</h1>
+            <div class="info_news_desc">Published: <span>@ViewBag.NewsDetail.PublishDate.ToString("dd-MM-yyy")</span> </div>
+            <img src="~/Uploads/News/@ViewBag.NewsDetail.Photo" class="full_main_pict"/>
+            <p class="text_container">@ViewBag.NewsDetail.Text </p>
+            <div class="clearfix"></div>
+        </li>
+    </ul>
+    @if (ViewBag.team_sort == 0)
+    {
+        <div class="btn_cover">@Html.ActionLink("Back to All News", "Index", "News", null, new {@class = "back_btn"})</div>
+    }
+    else
+    {
+        <div class="btn_cover">@Html.ActionLink("Back to Team News", "Index", "News", new {team_sort=ViewBag.team_sort}, new {@class = "back_btn"})</div>
+    }
+    </div>
+ <div class="text_block left_side">
+            <h1>News of the @ViewBag.TitleTeam </h1>
+       
+     <ul id="info_news_list">
+         @foreach (var n in @Model)
+         {
+             <li>
+                 <img src="~/Uploads/News/@n.Photo" class="main_pict"/><h3>@Html.ActionLink(n.Headder, "NDeteils", "News", new {newsId = n.NewsId}, null)</h3>
+                 <div class="info_news_desc">Published: <span>@n.PublishDate.ToString("dd-MM-yyyy")</span> </div>
+                 <p class="text_container">@Html.Truncate(n.Text, 300)</p>
+                 <div class="clearfix"></div>
+             </li>
+         }
+      
+  
+     </ul>
+     
+        </div>
+ 
+        <div class="clearfix"></div>
+    </div>

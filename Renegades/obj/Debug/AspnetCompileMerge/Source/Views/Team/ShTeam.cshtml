@@ -1,0 +1,72 @@
+﻿@{
+    ViewBag.Title = "ShTeam";
+    var classDiv="";
+}
+@using Renegades.Helpers
+@model Renegades.ViewModel.TeamDataVM
+
+
+
+
+<div id="content_block">
+    @Model.Newses.Count()
+    @{
+        if (@Model.Newses.Count() != 0)
+        {
+            classDiv = "text_block right_side";
+        }
+        else
+        {
+            classDiv = "text_block";
+        }
+    }
+    <div class="@classDiv">
+                 
+    
+    
+    
+    <h1>Team details - @ViewBag.TitleTeam</h1>    
+    
+    <table class="coaches_list">
+        <caption>Team's Coaches</caption>
+        <tr><th>Coatche</th><th>Position</th><th>Contact Info</th></tr>
+        @foreach (var ch in @Model.Coaches)
+        {
+            <tr><td>@Html.DisplayFor(modelItem => ch.CoachName)</td><td>@Html.DisplayFor(modelItem => ch.CoachType)</td><td>@Html.DisplayFor(modelItem => ch.CoachEmail)</td></tr>
+        }
+       
+    </table>
+    <table class="players_list">
+        <caption>Team's Players</caption>
+        <tr><th>Player Name</th><th>Team number</th><th>Play Position</th><th>Date of Birth</th><th>Shool</th><th>Graduation</th></tr>
+        @foreach (var ch in @Model.Players)
+        {
+            <tr><td>@Html.ActionLink(""+@Html.DisplayFor(modelItem => ch.Fname)+" "+@Html.DisplayFor(modelItem => ch.LName)+"","Player","Team",new {teamid=ch.TeamId,playerid=ch.PlayerId},new{@class="player_link"})</td><td>@Html.DisplayFor(modelItem => ch.TeamNumber)</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+        }
+       
+    </table>
+</div>
+    
+    @if (@Model.Newses.Count()!=0)
+    {
+        <div class="text_block left_side">
+            <h1>News of the @ViewBag.TitleTeam </h1>
+       
+            <ul id="info_news_list">
+                @foreach (var n in @Model.Newses)
+                {
+                    <li>
+                        <img src="~/Uploads/News/@n.Photo" class="main_pict"/><h3>@Html.ActionLink(n.Headder, "NDeteils", "News", new {newsId = n.NewsId, teamid = n.TeamId}, null)</h3>
+                        <div class="info_news_desc">Published: <span>@n.PublishDate.ToString("dd-MM-yyyy")</span> </div>
+                        <p class="text_container">@Html.Truncate(n.Text, 300)</p>
+                        <div class="clearfix"></div>
+                    </li>
+                }
+      
+  
+            </ul>
+        </div>
+ 
+        <div class="clearfix"></div>
+    }
+</div>

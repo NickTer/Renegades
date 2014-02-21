@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Этот файл используется в процессе публикации или упаковки вашего веб-проекта. Вы можете настроить поведение процесса,
+изменив этот файл MSBuild. Дополнительные сведения см. по адресу http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>02/18/2014 00:40:42</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>02/18/2014 00:40:43</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>02/13/2014 11:26:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Mvc.FixedDisplayModes.dll">
+      <publishTime>02/13/2014 11:26:35</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>02/13/2014 11:26:30</publishTime>
+    </File>
+    <File Include="bin/Renegades.dll">
+      <publishTime>02/21/2014 16:31:52</publishTime>
+    </File>
+    <File Include="bin/ru/System.Net.Http.Formatting.resources.dll">
+      <publishTime>02/13/2014 11:26:39</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.Helpers.resources.dll">
+      <publishTime>02/13/2014 11:26:38</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.Http.resources.dll">
+      <publishTime>02/13/2014 11:26:38</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.Http.WebHost.resources.dll">
+      <publishTime>02/13/2014 11:26:39</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.Mvc.resources.dll">
+      <publishTime>02/13/2014 11:26:38</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.Razor.resources.dll">
+      <publishTime>02/13/2014 11:26:37</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.WebPages.Deployment.resources.dll">
+      <publishTime>02/13/2014 11:26:38</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.WebPages.Razor.resources.dll">
+      <publishTime>02/13/2014 11:26:38</publishTime>
+    </File>
+    <File Include="bin/ru/System.Web.WebPages.resources.dll">
+      <publishTime>02/13/2014 11:26:38</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>02/13/2014 11:26:35</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>02/13/2014 11:26:33</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>02/13/2014 11:26:36</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>02/13/2014 11:26:36</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>02/13/2014 11:26:34</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>02/13/2014 11:26:33</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>02/13/2014 11:26:33</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>02/13/2014 11:26:33</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>02/13/2014 11:26:34</publishTime>
+    </File>
+    <File Include="Content/Style.css">
+      <publishTime>02/21/2014 16:14:21</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>02/13/2014 11:26:25</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>02/18/2014 00:40:45</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>02/21/2014 16:36:02</publishTime>
+    </File>
+    <File Include="Views/Main/ContactUs.cshtml">
+      <publishTime>02/21/2014 16:08:57</publishTime>
+    </File>
+    <File Include="Views/Main/Index.cshtml">
+      <publishTime>02/21/2014 16:24:30</publishTime>
+    </File>
+    <File Include="Views/News/Index.cshtml">
+      <publishTime>02/21/2014 16:18:21</publishTime>
+    </File>
+    <File Include="Views/News/NDeteils.cshtml">
+      <publishTime>02/21/2014 16:22:43</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>02/21/2014 11:03:00</publishTime>
+    </File>
+    <File Include="Views/Team/Index.cshtml">
+      <publishTime>02/21/2014 01:10:26</publishTime>
+    </File>
+    <File Include="Views/Team/Player.cshtml">
+      <publishTime>02/21/2014 01:49:49</publishTime>
+    </File>
+    <File Include="Views/Team/ShTeam.cshtml">
+      <publishTime>02/21/2014 15:32:28</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>02/13/2014 11:26:25</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>02/16/2014 13:43:31</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>02/21/2014 16:36:00</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

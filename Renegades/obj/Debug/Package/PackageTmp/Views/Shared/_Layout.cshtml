@@ -1,0 +1,154 @@
+﻿@using System.Web.Script.Services
+@using Renegades.Controllers
+@using Renegades.Helpers
+@using Renegades.Models
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Renegates @ViewBag.Title</title>
+    <link rel="stylesheet" href="@Url.Content("~/Content/Style.css")"/> 
+    <link rel="stylesheet" href="@Url.Content("~/Content/jquery-ui-1.10.4.custom.css")"/> 
+    <script language="javascript" type="text/javascript" src="@Url.Content("~/Scripts/jquery-1.10.2.js")"></script>
+    <script language="javascript" type="text/javascript" src="@Url.Content("~/Scripts/jquery.validate.js")"></script>
+    <script language="javascript" type="text/javascript" src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.js")"></script>
+    
+    
+    @if (Request.RawUrl == "/" || Request.RawUrl=="/Main")
+    {
+        <link rel="stylesheet" href="@Url.Content("~/Content/nivo-slider.css")" type="text/css" />
+         <script language="javascript" type="text/javascript" src="@Url.Content("~/Scripts/jquery.nivo.slider.js")"></script>
+    }
+   
+    <script language="javascript" type="text/javascript">
+        $(function(){
+                $("div.main_container").css("height",$(window).height());
+                    $(window).resize(function(){
+                            $("div.main_container").css("height",$(window).height());
+                    });
+                });
+</script>
+
+    
+</head>
+    <body>
+        <div id="fb-root"></div>
+
+        <script>
+   
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1&appId=217825565003863";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+   
+        </script>
+      
+        <div class="main_container"></div>
+        <div id="header">
+            <div id="header_main">
+                <div id="header_wrap">
+                    <div id="Logo">
+                        <div class="hdr_logos"><img src="~/Content/Images/logo1.png"/></div>
+                    </div>
+                    <div id="navigat">
+                        <ul id="nav">
+                            <li>@Html.MyMainMenu("About","Index","Main")</li>
+                            <li>@Html.MyMainMenu("Our Teams","Index","Team")</li>
+                          <li>@Html.MyMainMenu("News & Video","Index","News")</li>
+                            <li>@Html.MyMainMenu("Contact Us","ContactUs","Main")</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div id="soc_links">
+                        <ul id="soc_items">
+
+                            <li><div class="fb-like" data-href="https://www.facebook.com/universal.assistance.group" data-width="200" data-layout="button_count" data-action="recommend" data-show-faces="true" ></div></li>
+                            <li><div class="g-plusone" data-size="medium" data-href="http://www.u-assistance.com"></div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+           
+        </div>
+        <div align="center" id="center">
+            <div id="main_content_container">
+               
+                <div class="main_content">
+                    <div id="content_block">
+                        <ul id="team_menu">
+                            @{
+                                
+                                var id = ViewBag.TeamId;
+                                var isInvalidId = id == null;
+                            }
+                            
+                            @foreach (var teamT in ViewBag.TeamList)
+                            {
+                                <li>
+                                    <span>@teamT.TypeName</span>
+                                    <ul id="sub_team_menu">
+                                        @foreach (var t in teamT.Teams)
+                                        {
+                                            
+                                            if (!isInvalidId && (int)id==(int) t.TeamId)
+                                            {
+                                               <li>@Html.ActionLink((string) t.TeamName, "ShTeam", "Team", new {teamid = (int) t.TeamId}, new{@class = "active_team"})</li> 
+                                            }
+                                            else
+                                            {
+                                                <li>@Html.ActionLink((string) t.TeamName, "ShTeam", "Team", new {teamid = (int) t.TeamId}, null)</li>
+                                            }
+
+                                        }
+                                       
+                                    </ul>
+                                </li>
+                            }
+                            
+                           
+                            <div class="clearfix"></div>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    @RenderBody()
+                </div>
+                <div id="sea_ftrcntnt">
+                    <div id="sea_ftrcntntinner" class="clearfix">
+                        <div class="cnn_ftrdivl1"></div>
+
+                        <div class="sea_clear"></div>
+
+                        <div class="sea_divline" style="margin-bottom:5px"></div>
+                    
+                        <ul id="sponsors"><li><a href="http://www.slugger.com/"><img src="/Content/Images/8.png" width="160"></a></li><li><a href="http://all-americansportsacademy.com/"><img src="/Content/Images/17.png"/></a></li><li><a href="http://www.anytimefitness.com/gyms/2020/wichita-ks-67209"><img src="/Content/Images/16.jpg" width="350"/></a></li></ul>
+                        <div class="clearfix"></div>
+                        <div class="sea_ftrdivl2" style="margin-top:5px"></div>
+                        <table>
+                            <tr>
+                                <td class="copy_button">Copyright 2014. All right Reserved to "Kansas Renegates"</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+         
+            window.___gcfg = {lang: 'ru'};
+
+
+            (function() {
+                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                po.src = 'https://apis.google.com/js/platform.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+            })();
+         
+</script>
+    </body>
+</html>
